@@ -11,6 +11,7 @@ Cyberbit
 ### Server
   1. Open Visual Studio.
   2. Open ```Cyberbit.TaskManager.Server.sln``` solution from: ```Cyberbit.TaskManager.Server```
+  3. Hit ```F5``` to start the application in debug mode.
 
 ### Client
 1. Set terminal to directory: ```cd cyberbit\Cyberbit.TaskManager.Client\Task-Manager```
