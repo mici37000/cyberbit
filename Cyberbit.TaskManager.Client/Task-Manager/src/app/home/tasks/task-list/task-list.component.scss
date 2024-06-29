@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    .mat-card {
+        width: 250px;
+        height: 300px;
+        margin-inline-end: 25px;
+
+        .Open {
+            color: #ffa500;
+        }
+
+        .Done {
+            color: #00b500;
+        }        
+
+        .Overdue {
+            color: #ff0000;
+        }
+
+        .mat-card-title {
+            margin-block-end: 15px;
+        }
+        
+        .mat-card-content {
+            > div {
+                margin-block-end: 15px;
+
+                &.cats {
+                    span {
+                        margin-inline-end: 5px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 15;
+                                line-clamp: 15;
+                        -webkit-box-orient: horizontal;                        
+                    }
+                }
+            }
+         }
+
+        .mat-card-subtitle {
+            text-align: end;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<div class="container">
+    <mat-card *ngFor="let task of taskList$ | async">
+        <mat-card-subtitle class="dark-color">
+             <span class="bold">Status: </span>
+             <span class="capitalize" ngClass="{{task.status}}">{{ task.status }}</span>
+            </mat-card-subtitle>
+        <mat-card-title class="ellipsis" [attr.title]="task.title">{{ task.title }}</mat-card-title>
+        <mat-card-content>
+            <div class="description truncate" [attr.title]="task.description">{{ task.description }}</div>
+            <div>
+                <span class="bold">Created: </span>
+                <span>{{ task.creationTime| date:'dd MMM yyyy' }}</span>
+            </div>
+            <div>
+                <span class="bold">Due Date: </span>
+                <span>{{ task.dueDate| date:'dd MMM yyyy' }}</span>
+            </div>
+            <div class="capitalize bold">
+                {{ task.user.firstName }} {{ task.user.lastName }}
+            </div>
+            <div class="cats">
+                <span class="bold">Categories:</span>
+                <span *ngFor="let cat of cats | slice:0:3" [attr.title]="cat">{{ cat | shortText:15}}</span>
+            </div>
+        </mat-card-content>
+      </mat-card>
+</div>

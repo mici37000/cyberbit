@@ -1,6 +1,6 @@
 ## Description
 
-Cyberbit
+Cyberbit system
 
 ## Installation
 
@@ -10,10 +10,6 @@ Cyberbit
 
 ## Running the app
 
-1. Set terminal to skybox directory: ```cd skybox```
+1. Set terminal to skybox directory: ```cd cyberbit\Cyberbit.TaskManager.Client\Task-Manager```
 2. Start local server: ```ng serve```
 3. Navigate to <http://localhost:4200>
-
-## External modules in this project
-1. Bootstrap
-2. FontAwesome
